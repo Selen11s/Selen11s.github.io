@@ -17,10 +17,10 @@
         <div class="w3-bar w3-black">
             <span class="branding w3-bar-item w3-mobile">Matthew</span>
             <span class="w3-right w3-mobile">
-            <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-red">Home</a>
+            <a href="index.html" class="w3-bar-item w3-button w3-mobile w3-hover-red">Home</a>
             <a href="contact.html" class="w3-bar-item w3-button w3-mobile w3-hover-red">Contact</a>
-            <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-red">Services</a>
             <a href="portfolio.html" class="w3-bar-item w3-button w3-mobile w3-hover-red">Portfolio</a>
+            <a href="login.php" class="w3-bar-item w3-button w3-mobile w3-hover-red">Login</a>
             </span>
 </div>
 
@@ -29,8 +29,10 @@
         <div class="w3-container w3-center">
             <h1 class="w3-text-shadow w3-animate-fading">Do It</h1>
             <hr>
+
                 <p class="w3-animate-opacity">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut libero at ante sagittis sagittis a nec nisi. Phasellus vitae efficitur nisi, ac consequat urna. Mauris eleifend massa eu neque lacinia, id maximus turpis laoreet. Cras lacinia neque at augue malesuada aliquet. Nam mollis mi quis ex commodo, nec rutrum nulla consequat.</p>
-                <button onclick="document.getElementById('start-modal'.style.display='block'" class="w3-button w3-red w3-large">Start Here</button>
+                <button onclick="document.getElementById('start-modal').style.display='block'" class="w3-button w3-red w3-large">Start Here</button>
+                
     </section>
 
 <!-- SECTION -->
@@ -105,6 +107,34 @@
         </div>
     </div>
     </section>
+    
+    <div id="start-modal" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-blue">
+                 <span onclick="document.getElementById('start-modal').style.display='none'" class=" w3-blue    w3-button w3-display-topright">&times;</span>
+                <h2>Get Started</h2>
+            </header>
+            
+            <div class="w3-container">
+                <form>
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter your Name">
+                        <label>Username</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Enter your UserName">
+                        <label>Password</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Enter your Password">
+                        <label>Confirm Password</label>
+                        <input class="w3-input w3-border w3-margin-bottom" type="password" placeholder="Confirm your Password">
+                         <button class="w3-green w3-btn-block w3-section w3-padding onclick=">Submit</button>
+                
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     </div>
+
             
 
 
@@ -115,8 +145,7 @@
                 x.className += " w3-show";
             } else { 
                 x.className = x.className.replace(" w3-show", "");
-            }
-}
+                }
 </script>
   
    </body>
